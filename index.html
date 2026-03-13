@@ -101,9 +101,6 @@
 </head>
 <body class="antialiased selection:bg-brand-primary selection:text-white">
 
-<form name="partner-signup" method="POST" data-netlify="true">
-<input type="hidden" name="fullname" value="partner-signup">
-
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -568,55 +565,28 @@ class="glass p-8 md:p-10 rounded-2xl border border-white/10 backdrop-blur-xl bg-
 
 <h3 class="text-2xl md:text-3xl font-bold mb-2">Partner Signup</h3>
 
-<p class="text-gray-400 text-sm mb-6">
-Join our partner network and earn commission for every project you refer.
-</p>
-
-<!-- Name -->
 <div>
 <label class="block text-sm text-gray-400 mb-2">Full Name</label>
-<input 
-type="text" 
-name="fullname" 
-required
-placeholder="John Doe"
-class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30 transition-all duration-300">
+<input type="text" name="fullname" required placeholder="John Doe"
+class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white">
 </div>
 
-<!-- Email -->
 <div>
 <label class="block text-sm text-gray-400 mb-2">Email Address</label>
-<input 
-type="email" 
-name="email" 
-required
-placeholder="john@example.com"
-class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30 transition-all duration-300">
+<input type="email" name="email" required placeholder="john@example.com"
+class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white">
 </div>
 
-<!-- Website -->
 <div>
 <label class="block text-sm text-gray-400 mb-2">Website / Social Profile</label>
-<input 
-type="text" 
-name="website"
-placeholder="https://yourwebsite.com"
-class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30 transition-all duration-300">
+<input type="text" name="website" placeholder="https://yourwebsite.com"
+class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white">
 </div>
 
-<!-- Button -->
-<button 
-type="submit"
-class="w-full py-3 md:py-4 rounded-lg bg-gradient-to-r from-brand-primary to-brand-accent text-white font-bold text-lg hover:opacity-90 hover:scale-[1.02] transition-all duration-300 shadow-lg shadow-brand-primary/20">
+<button type="submit"
+class="w-full py-3 md:py-4 rounded-lg bg-gradient-to-r from-brand-primary to-brand-accent text-white font-bold">
 Join Partner Program
 </button>
-
-<p class="text-center text-sm text-gray-500 mt-4">
-Already a partner?
-<a href="#" class="text-brand-primary hover:underline ml-1">
-Login to Dashboard
-</a>
-</p>
 
 </form>
             </div>
