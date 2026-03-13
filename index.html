@@ -104,12 +104,13 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-tighter flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-primary to-brand-accent flex items-center justify-center">
-                    <i class="fa-solid fa-layer-group text-white text-sm"></i>
-                </div>
-                NexGen<span class="text-gray-400">.io</span>
-            </a>
+               <a href="#" class="flex items-center gap-2">
+            <img src="./logo.png" 
+           alt="Logo"
+           class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain">
+
+    </a>
+
 
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
                 <a href="#services" class="hover:text-white transition-colors">Services</a>
@@ -503,59 +504,7 @@
     </style>
 </section>  
 
-    <!-- 6. Pricing Section -->
-    <section id="pricing" class="py-24 bg-dark-900 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl md:text-5xl font-bold mb-4">Simple Pricing</h2>
-                <p class="text-gray-400">Transparent pricing for every stage of your business growth.</p>
-            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Starter Plan -->
-                <div class="glass p-8 rounded-2xl border border-white/5 reveal">
-                    <h3 class="text-xl font-bold text-gray-300 mb-2">Starter</h3>
-                    <div class="text-4xl font-bold mb-6">$499</div>
-                    <ul class="space-y-4 mb-8 text-gray-400 text-sm">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Basic Website</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Up to 5 Pages</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Responsive Design</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Contact Form</li>
-                    </ul>
-                    <a href="#contact" class="block w-full py-3 rounded-lg border border-white/20 text-center hover:bg-white hover:text-black transition-all">Start Project</a>
-                </div>
-
-                <!-- Professional Plan (Highlighted) -->
-                <div class="glass p-8 rounded-2xl border border-brand-primary/50 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(99,102,241,0.15)] reveal" style="transition-delay: 100ms;">
-                    <div class="absolute top-0 right-0 bg-brand-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Professional</h3>
-                    <div class="text-4xl font-bold mb-6">$1,999</div>
-                    <ul class="space-y-4 mb-8 text-gray-300 text-sm">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-primary"></i> Advanced Website / Web App</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-primary"></i> Custom Dashboard System</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-primary"></i> Database Integration</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-primary"></i> CMS Integration</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-primary"></i> SEO Optimization</li>
-                    </ul>
-                    <a href="#contact" class="block w-full py-3 rounded-lg bg-brand-primary text-center hover:bg-brand-secondary transition-all font-bold">Start Project</a>
-                </div>
-
-                <!-- Enterprise Plan -->
-                <div class="glass p-8 rounded-2xl border border-white/5 reveal" style="transition-delay: 200ms;">
-                    <h3 class="text-xl font-bold text-gray-300 mb-2">Enterprise</h3>
-                    <div class="text-4xl font-bold mb-6">Custom</div>
-                    <ul class="space-y-4 mb-8 text-gray-400 text-sm">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Full SaaS Platform</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> AI Integration</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Full Custom Development</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Dedicated Support</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-400"></i> Scalable Architecture</li>
-                    </ul>
-                    <a href="#contact" class="block w-full py-3 rounded-lg border border-white/20 text-center hover:bg-white hover:text-black transition-all">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- 7. Work With Us (Affiliate) Section -->
     <section id="partners" class="py-24 bg-dark-800 relative overflow-hidden">
@@ -601,7 +550,68 @@
                         </div>
                     </div>
                 </div>
+<form name="partner-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+class="glass p-8 md:p-10 rounded-2xl border border-white/10 backdrop-blur-xl bg-white/5 shadow-xl reveal w-full max-w-lg mx-auto space-y-5">
 
+<input type="hidden" name="form-name" value="partner-signup">
+
+<p hidden>
+<label>Don’t fill this out: <input name="bot-field"></label>
+</p>
+
+<h3 class="text-2xl md:text-3xl font-bold mb-2">Partner Signup</h3>
+
+<p class="text-gray-400 text-sm mb-6">
+Join our partner network and earn commission for every project you refer.
+</p>
+
+<!-- Name -->
+<div>
+<label class="block text-sm text-gray-400 mb-2">Full Name</label>
+<input 
+type="text" 
+name="fullname" 
+required
+placeholder="John Doe"
+class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30 transition-all duration-300">
+</div>
+
+<!-- Email -->
+<div>
+<label class="block text-sm text-gray-400 mb-2">Email Address</label>
+<input 
+type="email" 
+name="email" 
+required
+placeholder="john@example.com"
+class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30 transition-all duration-300">
+</div>
+
+<!-- Website -->
+<div>
+<label class="block text-sm text-gray-400 mb-2">Website / Social Profile</label>
+<input 
+type="text" 
+name="website"
+placeholder="https://yourwebsite.com"
+class="w-full bg-dark-900/80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30 transition-all duration-300">
+</div>
+
+<!-- Button -->
+<button 
+type="submit"
+class="w-full py-3 md:py-4 rounded-lg bg-gradient-to-r from-brand-primary to-brand-accent text-white font-bold text-lg hover:opacity-90 hover:scale-[1.02] transition-all duration-300 shadow-lg shadow-brand-primary/20">
+Join Partner Program
+</button>
+
+<p class="text-center text-sm text-gray-500 mt-4">
+Already a partner?
+<a href="#" class="text-brand-primary hover:underline ml-1">
+Login to Dashboard
+</a>
+</p>
+
+</form>
             </div>
         </div>
     </section>
@@ -729,7 +739,7 @@
                                 </div>
                                 <div>
                                     <p class="text-sm text-gray-400">Email Us</p>
-                                    <p class="font-medium">hello@nexgen.io</p>
+                                    <p class="font-medium">nextgenbuilderrr@gmail.com</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
@@ -738,7 +748,7 @@
                                 </div>
                                 <div>
                                     <p class="text-sm text-gray-400">WhatsApp</p>
-                                    <p class="font-medium">+1 (555) 123-4567</p>
+                                    <p class="font-medium">+91 6354 880 284</p>
                                 </div>
                             </div>
                         </div>
@@ -853,9 +863,9 @@
                     <div>
                         <h4 class="font-bold mb-4">Contact</h4>
                         <ul class="space-y-2 text-gray-400 text-sm">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-primary"></i> hello@nexgen.io</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-primary"></i> +1 (555) 123-4567</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-primary"></i> San Francisco, CA</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-primary"></i> nextgenbuilderrr@gmail.com</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-primary"></i> +91 6354 880 284</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-primary"></i> India</li>
                         </ul>
                         <div class="mt-4">
                             <p class="text-xs text-gray-500 mb-2">Subscribe to our newsletter</p>
@@ -868,7 +878,7 @@
                 </div>
                 
                 <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p class="text-gray-500 text-sm">© 2024 NexGen Digital. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm">© 2025 NexGen Digital. All rights reserved.</p>
                     <div class="flex gap-6 text-sm text-gray-500">
                         <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                         <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
